@@ -5,16 +5,17 @@ class Solution:
         :type str: str
         :rtype: int
         """
-        INT_MAX, INT_MAX_DIV10, INT_MIN = 2147483647, 214748364, -2147483648
-        sign, base, i = 1, 0, 0
-
+        i = 0
         # skip preceding spaces
         try:
             while str[i] == ' ':
                 i += 1
         except IndexError:
             return 0
-        
+
+        INT_MAX, INT_MAX_DIV10, INT_MIN = 2147483647, 214748364, -2147483648
+        sign, base, = 1, 0
+
         # handle signs
         if str[i] == '+':
             i += 1
