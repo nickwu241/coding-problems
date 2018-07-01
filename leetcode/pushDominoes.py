@@ -14,12 +14,12 @@ class Solution(object):
             
             if dominoe == 'L' and last_letter == 'R': # R...L
                 lo = last_letter_i + 1
-                high = i -1
-                while lo < high:
+                hi = i -1
+                while lo < hi:
                     list_dominoes[lo] = 'R'
-                    list_dominoes[high] = 'L'
+                    list_dominoes[hi] = 'L'
                     lo += 1
-                    high -= 1
+                    hi -= 1
             elif dominoe == 'L': # L...L
                 for j in range(last_letter_i + 1, i):
                     list_dominoes[j] = 'L'
