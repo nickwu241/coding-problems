@@ -14,10 +14,8 @@ class Solution:
         if not head or not head.next:
             return head
         
-        f = head
-        s = f.next
+        p, f, s = ListNode(0), head, head.next
         head = s
-        p = ListNode(0)
         while s:
             p.next, f.next, s.next = s, s.next, f
             if not f.next:
