@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/fair-candy-swap/description
+# https://leetcode.com/problems/fair-candy-swap/description/
 class Solution(object):
     def fairCandySwap(self, A, B):
         """
