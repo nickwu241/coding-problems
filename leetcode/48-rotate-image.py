@@ -9,4 +9,4 @@ class Solution:
         # Reflect across X-axis
         for row in range(N):
             for col in range(N//2):
-                matrix[row][col], matrix[row][N-1-col] = matrix[row][N-1-col], matrix[row][col]
+                matrix[row][col], matrix[row][~col] = matrix[row][~col], matrix[row][col]
